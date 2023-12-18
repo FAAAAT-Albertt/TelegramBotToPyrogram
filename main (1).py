@@ -18,9 +18,6 @@ import client
 import database
 from states import SaveInfo, SendText, EnterCode
 
-# TOKEN = "6605690741:AAGCR2CWPFesB7-N09yta2S2DxTIkuyYAso"
-TOKEN = "6368678074:AAEyPz9q_PLp7DGws1Ltk2AIHwDEEneEL1Q"
-
 dp = Dispatcher()
 bot = Bot(TOKEN, parse_mode=ParseMode.HTML)
 user_page = {}
