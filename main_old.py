@@ -12,30 +12,9 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
 from aiogram.utils.markdown import hbold, hitalic, hlink
 from pyrogram import Client
 
-session = { 
-    "nik_work" : {
-        'api_id' : 16870143,
-        'api_hash' : "7c82583b66a59408828d897c149da5df",
-    },
-    "rusyk_lev" : {
-        'api_id' : 29768044,
-        'api_hash' : "ceb27266295977ebe4ce320a90ed4c2f",
-    },
-}
-#ADMIN = 515551867
-ADMIN = 5693541259
-TOKEN = "6605690741:AAGCR2CWPFesB7-N09yta2S2DxTIkuyYAso"
-
 dp = Dispatcher()
 bot = Bot(TOKEN, parse_mode=ParseMode.HTML)
 
-choise_acc = []
-#choise_acc = ['rusyk_lev', 'nik_work']
-user_to_send = []
-#user_to_send = {'lexa_minimum': 515551867, 'larhatdreen': 492999470}
-sending_mes = {'mes' : None}
-#sending_mes = {'mes': 'Привет от ботика тебе)'}
-log = {'log' : None}
 
 @dp.message(CommandStart())
 async def command_start_handler(message: Message) -> None:
